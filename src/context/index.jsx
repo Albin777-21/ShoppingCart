@@ -57,6 +57,7 @@ function ShoppingCartProvider({ children }) {
     localStorage.setItem("cartItems", JSON.stringify(cpyExistingCartItems));
     navigate("/cart");
   }
+  
 
   function handleRemoveFromCart(getProductDetails, isFullyRemoveFromCart) {
     let cpyExistingCartItems = [...cartItems];

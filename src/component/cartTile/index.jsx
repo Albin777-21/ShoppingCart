@@ -21,7 +21,7 @@ function CartTile({ singleCartItem }) {
             </h3>
             <button
               onClick={() => handleRemoveFromCart(singleCartItem, true)}
-              className="text-sm px-4 py-3 bg-black text-white font-extrabold"
+              className="text-sm px-2 py-2 bg-black text-white font-extralight "
             >
               REMOVE
             </button>
@@ -34,17 +34,17 @@ function CartTile({ singleCartItem }) {
           <p className="mt-2 mb-3 font-bolf text-[16px]">
             Quantity: {singleCartItem?.quantity}
           </p>
-          <div className="mt-3">
+          <div className="mt-1 items-center flex gap-2">
             <button
               onClick={() => handleRemoveFromCart(singleCartItem, false)}
-              className="disabled:opacity-65 border border-[#000]"
+              className="disabled:opacity-65 border size-10 border-[#000]"
               disabled={singleCartItem?.quantity === 1}
             >
               -
             </button>
             <button
               onClick={() => handleAddToCart(singleCartItem)}
-              className="border border-[#000]"
+              className="border size-10  border-[#000]"
             >
               +
             </button>
